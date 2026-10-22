@@ -1,0 +1,11 @@
+name: pilot-ci
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo greeting
+        run: echo "pilot-ci triggered manually"
